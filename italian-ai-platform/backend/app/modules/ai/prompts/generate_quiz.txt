@@ -1,0 +1,5 @@
+Purpose: Generate quiz questions for a lesson.
+Status: Placeholder for future implementation.
+
+This prompt will be used to generate vocabulary, grammar, and comprehension quiz items
+based on the lesson objectives and content.

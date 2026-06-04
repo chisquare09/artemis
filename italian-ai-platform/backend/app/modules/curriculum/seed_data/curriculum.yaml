@@ -1,0 +1,1848 @@
+curriculum:
+  title: Full Italian Curriculum A1 to B2
+  description: Integrated CEFR-aligned Italian curriculum from A1 to B2
+  language: Italian
+  version: 0.2.0
+
+study_modes:
+  - code: daily_communication
+    name: Daily Communication
+    description: Practical Italian for everyday listening, speaking, and conversation
+  - code: academic_purpose
+    name: Academic Purpose
+    description: Structured Italian study for reading, writing, grammar, and certification preparation
+
+levels:
+  - code: A1
+    name: Beginner / Breakthrough
+    order_index: 1
+    goal: Handle very simple communication, introduce yourself, ask basic questions, understand slow speech, read signs and menus, and write short personal messages.
+    exit_outcomes:
+      - Introduce yourself
+      - Ask and answer simple questions
+      - Order food
+      - Ask for directions
+      - Describe family and routine
+      - Understand slow, clear speech
+      - Write short simple texts
+    units:
+      - code: A1.1
+        title: Sounds, Alphabet, and First Contact
+        summary: Learn Italian sounds, alphabet, and basic greetings.
+        order_index: 1
+        objectives:
+          - type: communicative_goal
+            content: Greet people formally and informally
+          - type: communicative_goal
+            content: Say goodbye
+          - type: communicative_goal
+            content: Say please, thank you, sorry
+          - type: communicative_goal
+            content: Ask How are you
+          - type: communicative_goal
+            content: Introduce your name
+          - type: grammar
+            content: Italian alphabet
+          - type: grammar
+            content: Vowels and consonants
+          - type: grammar
+            content: Double consonants
+          - type: grammar
+            content: Stress and syllables
+          - type: grammar
+            content: Basic sentence order
+          - type: grammar
+            content: Subject pronouns io, tu, lui, lei, noi, voi, loro
+          - type: vocabulary
+            content: Greetings
+          - type: vocabulary
+            content: Polite expressions
+          - type: vocabulary
+            content: Countries and nationalities
+          - type: vocabulary
+            content: Basic classroom phrases
+          - type: listening
+            content: Recognize greetings
+          - type: listening
+            content: Identify names and countries
+          - type: listening
+            content: Understand very slow introductions
+          - type: speaking
+            content: Introduce yourself in 3-5 sentences
+          - type: speaking
+            content: Spell your name
+          - type: speaking
+            content: Ask someone name and nationality
+          - type: reading
+            content: Read basic signs and classroom instructions
+          - type: writing
+            content: Write a short self-introduction
+          - type: culture
+            content: Formal vs informal greetings ciao vs buongiorno
+          - type: culture
+            content: Basic use of tu and Lei
+
+      - code: A1.2
+        title: Identity and Personal Information
+        summary: Share and ask for personal information.
+        order_index: 2
+        objectives:
+          - type: communicative_goal
+            content: Say your age
+          - type: communicative_goal
+            content: Say where you are from
+          - type: communicative_goal
+            content: Say what languages you speak
+          - type: communicative_goal
+            content: Ask basic personal questions
+          - type: grammar
+            content: Verb essere
+          - type: grammar
+            content: Verb avere
+          - type: grammar
+            content: Present tense of chiamarsi
+          - type: grammar
+            content: Gender of nouns
+          - type: grammar
+            content: Singular and plural nouns
+          - type: grammar
+            content: Definite articles il, lo, la, l, i, gli, le
+          - type: grammar
+            content: Indefinite articles un, uno, una, un
+          - type: vocabulary
+            content: Age
+          - type: vocabulary
+            content: Numbers 0-100
+          - type: vocabulary
+            content: Nationalities
+          - type: vocabulary
+            content: Languages
+          - type: vocabulary
+            content: Professions
+          - type: listening
+            content: Understand simple personal introductions
+          - type: speaking
+            content: Conduct a short introduction exchange
+          - type: reading
+            content: Understand a short personal profile
+          - type: writing
+            content: Complete a personal information form
+          - type: academic_certification
+            content: Understand exam-style identity questions
+
+      - code: A1.3
+        title: Family and Description
+        summary: Describe family members and physical appearance.
+        order_index: 3
+        objectives:
+          - type: communicative_goal
+            content: Talk about family
+          - type: communicative_goal
+            content: Describe people simply
+          - type: communicative_goal
+            content: Say possession
+          - type: grammar
+            content: Possessive adjectives mio, tuo, suo
+          - type: grammar
+            content: Adjective agreement
+          - type: grammar
+            content: Common adjectives
+          - type: grammar
+            content: Verb avere for physical description
+          - type: grammar
+            content: Verb essere for personality
+          - type: vocabulary
+            content: Family members
+          - type: vocabulary
+            content: Physical appearance
+          - type: vocabulary
+            content: Personality
+          - type: vocabulary
+            content: Basic emotions
+          - type: listening
+            content: Understand simple family descriptions
+          - type: speaking
+            content: Describe your family
+          - type: speaking
+            content: Describe a person in a photo
+          - type: reading
+            content: Read simple family descriptions
+          - type: writing
+            content: Write 5-8 sentences about your family
+          - type: culture
+            content: Italian family vocabulary and forms of address
+
+      - code: A1.4
+        title: Daily Objects, House, and Location
+        summary: Name objects and describe where things are.
+        order_index: 4
+        objectives:
+          - type: communicative_goal
+            content: Say where things are
+          - type: communicative_goal
+            content: Describe your room or home
+          - type: communicative_goal
+            content: Ask where something is
+          - type: grammar
+            content: C e and ci sono
+          - type: grammar
+            content: Simple prepositions a, in, di, da, con, su, per
+          - type: grammar
+            content: Prepositional phrases of place
+          - type: grammar
+            content: Demonstratives questo, quello
+          - type: grammar
+            content: There is and there are
+          - type: vocabulary
+            content: House rooms
+          - type: vocabulary
+            content: Furniture
+          - type: vocabulary
+            content: Objects
+          - type: vocabulary
+            content: Places in town
+          - type: listening
+            content: Understand simple location descriptions
+          - type: speaking
+            content: Describe your room
+          - type: speaking
+            content: Ask where an object is
+          - type: reading
+            content: Read a simple apartment description
+          - type: writing
+            content: Describe your home
+
+      - code: A1.5
+        title: Food, Café, and Restaurant
+        summary: Learn to order food and drinks, ask for prices, ask for the bill, and express likes and dislikes.
+        order_index: 5
+        objectives:
+          - type: communicative_goal
+            content: Order food and drinks
+          - type: communicative_goal
+            content: Ask for prices
+          - type: communicative_goal
+            content: Ask for the bill
+          - type: communicative_goal
+            content: Express likes and dislikes
+          - type: grammar
+            content: "Present tense regular verbs: -are"
+          - type: grammar
+            content: Introduction to piacere
+          - type: grammar
+            content: Articles with food nouns
+          - type: grammar
+            content: "Basic negation: non"
+          - type: grammar
+            content: "Questions with quanto, cosa, dove"
+          - type: vocabulary
+            content: Food
+          - type: vocabulary
+            content: Drinks
+          - type: vocabulary
+            content: Café items
+          - type: vocabulary
+            content: Restaurant phrases
+          - type: vocabulary
+            content: Prices
+          - type: listening
+            content: Understand café orders
+          - type: listening
+            content: Recognize prices
+          - type: speaking
+            content: Order at a café
+          - type: speaking
+            content: Ask for the bill
+          - type: speaking
+            content: Say what you like
+          - type: reading
+            content: Read a menu
+          - type: writing
+            content: Write a short food preference paragraph
+          - type: culture
+            content: Italian café culture
+          - type: culture
+            content: Breakfast and meal habits
+        activities:
+          - activity_type: intro
+            title: Lesson overview
+            description: Understand the goals of the café and restaurant lesson
+            skill_focus: integrated
+            order_index: 1
+          - activity_type: vocabulary
+            title: Food and café vocabulary
+            description: Learn essential food, drinks, café items, restaurant phrases, and prices
+            skill_focus: reading
+            order_index: 2
+          - activity_type: reading
+            title: Read a menu
+            description: Practice reading a simple Italian menu
+            skill_focus: reading
+            order_index: 3
+          - activity_type: listening
+            title: Café dialogue
+            description: Understand a simple café order and recognize prices
+            skill_focus: listening
+            order_index: 4
+          - activity_type: speaking
+            title: Speaking roleplay
+            description: Practice ordering at a café and asking for the bill
+            skill_focus: speaking
+            order_index: 5
+          - activity_type: writing
+            title: Food preference paragraph
+            description: Write a short paragraph about food and drink preferences
+            skill_focus: writing
+            order_index: 6
+          - activity_type: quiz
+            title: Grammar and vocabulary quiz
+            description: Check understanding of café vocabulary, prices, articles, negation, question words, and piacere
+            skill_focus: integrated
+            order_index: 7
+
+      - code: A1.6
+        title: Daily Routine
+        summary: Describe daily activities and routines.
+        order_index: 6
+        objectives:
+          - type: communicative_goal
+            content: Talk about your daily routine
+          - type: communicative_goal
+            content: Say times
+          - type: communicative_goal
+            content: Talk about frequency
+          - type: grammar
+            content: Present tense regular verbs -ere, -ire
+          - type: grammar
+            content: Reflexive verbs introduction alzarsi, lavarsi, vestirsi
+          - type: grammar
+            content: Time expressions
+          - type: grammar
+            content: Frequency adverbs sempre, spesso, qualche volta, mai
+          - type: vocabulary
+            content: Daily activities
+          - type: vocabulary
+            content: Time
+          - type: vocabulary
+            content: Days of the week
+          - type: vocabulary
+            content: Parts of the day
+          - type: listening
+            content: Understand a simple daily schedule
+          - type: speaking
+            content: Describe your typical day
+          - type: reading
+            content: Read a simple daily routine text
+          - type: writing
+            content: Write your daily routine
+
+      - code: A1.7
+        title: City, Directions, and Transport
+        summary: Ask for and give directions.
+        order_index: 7
+        objectives:
+          - type: communicative_goal
+            content: Ask for directions
+          - type: communicative_goal
+            content: Understand simple directions
+          - type: communicative_goal
+            content: Buy a ticket
+          - type: communicative_goal
+            content: Ask where a place is
+          - type: grammar
+            content: Imperative introduction scusi, vada, gira
+          - type: grammar
+            content: Modal verbs potere, volere, dovere
+          - type: grammar
+            content: Prepositions with places
+          - type: grammar
+            content: Verb andare
+          - type: grammar
+            content: Verb venire
+          - type: vocabulary
+            content: City places
+          - type: vocabulary
+            content: Transportation
+          - type: vocabulary
+            content: Directions
+          - type: vocabulary
+            content: Tickets
+          - type: vocabulary
+            content: Public services
+          - type: listening
+            content: Understand basic directions
+          - type: speaking
+            content: Ask for directions
+          - type: speaking
+            content: Say where you need to go
+          - type: reading
+            content: Read signs and simple maps
+          - type: writing
+            content: Write directions from one place to another
+
+      - code: A1.8
+        title: Shopping and Clothing
+        summary: Shop for clothes and describe what you wear.
+        order_index: 8
+        objectives:
+          - type: communicative_goal
+            content: Ask for sizes
+          - type: communicative_goal
+            content: Ask for prices
+          - type: communicative_goal
+            content: Say what you want
+          - type: communicative_goal
+            content: Express basic preferences
+          - type: grammar
+            content: Verb volere
+          - type: grammar
+            content: Verb preferire
+          - type: grammar
+            content: Direct object pronouns introduction lo, la, li, le
+          - type: grammar
+            content: Colors and adjective agreement
+          - type: grammar
+            content: Comparatives introduction piu di
+          - type: vocabulary
+            content: Clothes
+          - type: vocabulary
+            content: Colors
+          - type: vocabulary
+            content: Sizes
+          - type: vocabulary
+            content: Shops
+          - type: vocabulary
+            content: Payment
+          - type: listening
+            content: Understand shop exchanges
+          - type: speaking
+            content: Buy an item in a shop
+          - type: reading
+            content: Read price tags and short advertisements
+          - type: writing
+            content: Write a short shopping dialogue
+
+      - code: A1.9
+        title: Free Time and Hobbies
+        summary: Talk about leisure activities and hobbies.
+        order_index: 9
+        objectives:
+          - type: communicative_goal
+            content: Talk about hobbies
+          - type: communicative_goal
+            content: Make simple plans
+          - type: communicative_goal
+            content: Say what you do in your free time
+          - type: grammar
+            content: Present tense irregular verbs fare, uscire, stare
+          - type: grammar
+            content: Verb giocare
+          - type: grammar
+            content: Verb suonare
+          - type: grammar
+            content: Prepositions with activities
+          - type: grammar
+            content: Basic connectors e, ma, anche, perche
+          - type: vocabulary
+            content: Hobbies
+          - type: vocabulary
+            content: Sports
+          - type: vocabulary
+            content: Music
+          - type: vocabulary
+            content: Entertainment
+          - type: vocabulary
+            content: Weekend activities
+          - type: listening
+            content: Understand someone talking about free time
+          - type: speaking
+            content: Talk about hobbies and weekends
+          - type: reading
+            content: Read a short event listing
+          - type: writing
+            content: Write about your weekend
+
+      - code: A1.10
+        title: Review and A1 Survival Project
+        summary: Review A1 content and complete a survival project.
+        order_index: 10
+        objectives:
+          - type: academic_certification
+            content: Create a basic personal survival portfolio
+          - type: academic_certification
+            content: Self-introduction
+          - type: academic_certification
+            content: Family description
+          - type: academic_certification
+            content: Daily routine
+          - type: academic_certification
+            content: Restaurant dialogue
+          - type: academic_certification
+            content: City directions dialogue
+          - type: academic_certification
+            content: Shopping dialogue
+          - type: speaking
+            content: Present survival portfolio orally
+          - type: writing
+            content: Compile written survival portfolio
+
+  - code: A2
+    name: Elementary / Waystage
+    order_index: 2
+    goal: Handle routine daily situations independently including travel, shopping, appointments, health, housing, work basics, and simple past events.
+    exit_outcomes:
+      - Handle routine travel and daily-life interactions
+      - Talk about past experiences
+      - Describe habits and memories
+      - Make plans
+      - Understand short simple texts
+      - Write short personal and practical messages
+    units:
+      - code: A2.1
+        title: "Past Experiences: Passato Prossimo"
+        summary: Talk about what you did and past events.
+        order_index: 1
+        objectives:
+          - type: communicative_goal
+            content: Talk about what you did yesterday
+          - type: communicative_goal
+            content: Talk about past trips
+          - type: communicative_goal
+            content: Ask others about past events
+          - type: grammar
+            content: Passato prossimo
+          - type: grammar
+            content: Auxiliary verbs essere and avere
+          - type: grammar
+            content: Past participles
+          - type: grammar
+            content: Agreement with essere
+          - type: grammar
+            content: Common irregular past participles
+          - type: vocabulary
+            content: Yesterday, last week, last year
+          - type: vocabulary
+            content: Travel experiences
+          - type: vocabulary
+            content: Weekend activities
+          - type: vocabulary
+            content: Events
+          - type: listening
+            content: Understand simple past narratives
+          - type: speaking
+            content: Tell what you did last weekend
+          - type: reading
+            content: Read a simple travel blog entry
+          - type: writing
+            content: Write a short past-event paragraph
+
+      - code: A2.2
+        title: Travel and Accommodation
+        summary: Book accommodation and handle travel situations.
+        order_index: 2
+        objectives:
+          - type: communicative_goal
+            content: Book accommodation
+          - type: communicative_goal
+            content: Check in at a hotel
+          - type: communicative_goal
+            content: Explain travel problems
+          - type: communicative_goal
+            content: Ask for travel information
+          - type: grammar
+            content: Prepositions with cities, countries, and transport
+          - type: grammar
+            content: Dove, quando, quanto, quale
+          - type: grammar
+            content: Modal verbs in past tense
+          - type: grammar
+            content: Review of andare, venire, partire, arrivare
+          - type: vocabulary
+            content: Hotels
+          - type: vocabulary
+            content: Airports
+          - type: vocabulary
+            content: Train stations
+          - type: vocabulary
+            content: Tickets
+          - type: vocabulary
+            content: Travel problems
+          - type: listening
+            content: Understand hotel and station dialogues
+          - type: speaking
+            content: Role-play hotel check-in
+          - type: speaking
+            content: Ask about train times
+          - type: reading
+            content: Read timetables and travel notices
+          - type: writing
+            content: Write a hotel booking message
+
+      - code: A2.3
+        title: Health and Emergencies
+        summary: Describe symptoms and handle medical situations.
+        order_index: 3
+        objectives:
+          - type: communicative_goal
+            content: Say what hurts
+          - type: communicative_goal
+            content: Describe symptoms
+          - type: communicative_goal
+            content: Ask for medicine
+          - type: communicative_goal
+            content: Make a doctor appointment
+          - type: grammar
+            content: Indirect object pronouns introduction mi, ti, gli, le, ci, vi
+          - type: grammar
+            content: Verb fare male
+          - type: grammar
+            content: Reflexive verbs review
+          - type: grammar
+            content: Imperative polite forms introduction
+          - type: vocabulary
+            content: Body parts
+          - type: vocabulary
+            content: Symptoms
+          - type: vocabulary
+            content: Pharmacy
+          - type: vocabulary
+            content: Medicine
+          - type: vocabulary
+            content: Emergency phrases
+          - type: listening
+            content: Understand simple doctor and pharmacy dialogues
+          - type: speaking
+            content: Explain symptoms
+          - type: reading
+            content: Read simple medicine instructions
+          - type: writing
+            content: Write a message to cancel or request an appointment
+
+      - code: A2.4
+        title: Home, Renting, and Services
+        summary: Describe housing needs and handle rental situations.
+        order_index: 4
+        objectives:
+          - type: communicative_goal
+            content: Describe housing needs
+          - type: communicative_goal
+            content: Talk to a landlord
+          - type: communicative_goal
+            content: Report a problem
+          - type: communicative_goal
+            content: Understand rental ads
+          - type: grammar
+            content: C e and ci sono review
+          - type: grammar
+            content: Partitive articles del, della, dei
+          - type: grammar
+            content: Prepositions with rooms and furniture
+          - type: grammar
+            content: Comparatives piu di, meno di, come
+          - type: vocabulary
+            content: Housing
+          - type: vocabulary
+            content: Utilities
+          - type: vocabulary
+            content: Repairs
+          - type: vocabulary
+            content: Furniture
+          - type: vocabulary
+            content: Rental advertisements
+          - type: listening
+            content: Understand apartment descriptions
+          - type: speaking
+            content: Describe your ideal apartment
+          - type: reading
+            content: Read rental listings
+          - type: writing
+            content: Write a message about a housing problem
+
+      - code: A2.5
+        title: Work, Study, and Daily Responsibilities
+        summary: Talk about work and study routines.
+        order_index: 5
+        objectives:
+          - type: communicative_goal
+            content: Talk about work and study routines
+          - type: communicative_goal
+            content: Describe responsibilities
+          - type: communicative_goal
+            content: Talk about skills
+          - type: communicative_goal
+            content: Make simple professional introductions
+          - type: grammar
+            content: Present tense review
+          - type: grammar
+            content: Sapere vs conoscere
+          - type: grammar
+            content: Dovere, potere, volere in routine contexts
+          - type: grammar
+            content: Adverbs of frequency and manner
+          - type: vocabulary
+            content: Jobs
+          - type: vocabulary
+            content: Office
+          - type: vocabulary
+            content: Study subjects
+          - type: vocabulary
+            content: Skills
+          - type: vocabulary
+            content: Work tasks
+          - type: listening
+            content: Understand simple work and study descriptions
+          - type: speaking
+            content: Describe your job or study
+          - type: reading
+            content: Read a simple job ad
+          - type: writing
+            content: Write a short professional profile
+
+      - code: A2.6
+        title: Imperfetto and Describing the Past
+        summary: Describe childhood and past habits.
+        order_index: 6
+        objectives:
+          - type: communicative_goal
+            content: Describe childhood
+          - type: communicative_goal
+            content: Talk about past habits
+          - type: communicative_goal
+            content: Describe how things were
+          - type: grammar
+            content: Imperfetto
+          - type: grammar
+            content: Passato prossimo vs imperfetto introduction
+          - type: grammar
+            content: Time markers quando ero piccolo, una volta, sempre
+          - type: grammar
+            content: Descriptive past language
+          - type: vocabulary
+            content: Childhood
+          - type: vocabulary
+            content: School life
+          - type: vocabulary
+            content: Memories
+          - type: vocabulary
+            content: Past habits
+          - type: listening
+            content: Understand someone describing childhood
+          - type: speaking
+            content: Talk about your childhood
+          - type: reading
+            content: Read a simple memoir-style text
+          - type: writing
+            content: Write about your childhood or past routine
+
+      - code: A2.7
+        title: Invitations, Plans, and Social Life
+        summary: Make and respond to invitations and plans.
+        order_index: 7
+        objectives:
+          - type: communicative_goal
+            content: Invite someone
+          - type: communicative_goal
+            content: Accept and refuse invitations
+          - type: communicative_goal
+            content: Make plans
+          - type: communicative_goal
+            content: Suggest activities
+          - type: grammar
+            content: Future tense introduction
+          - type: grammar
+            content: Stare per + infinitive
+          - type: grammar
+            content: Vorrei for polite requests
+          - type: grammar
+            content: Pronouns review
+          - type: vocabulary
+            content: Social plans
+          - type: vocabulary
+            content: Events
+          - type: vocabulary
+            content: Invitations
+          - type: vocabulary
+            content: Time arrangements
+          - type: vocabulary
+            content: Celebrations
+          - type: listening
+            content: Understand phone calls and invitations
+          - type: speaking
+            content: Make plans with someone
+          - type: reading
+            content: Read event announcements
+          - type: writing
+            content: Write an invitation message
+
+      - code: A2.8
+        title: Food Culture and Cooking
+        summary: Understand recipes and explain cooking steps.
+        order_index: 8
+        objectives:
+          - type: communicative_goal
+            content: Understand recipes
+          - type: communicative_goal
+            content: Explain simple cooking steps
+          - type: communicative_goal
+            content: Talk about food habits
+          - type: grammar
+            content: Imperative informal forms
+          - type: grammar
+            content: Quantity expressions
+          - type: grammar
+            content: Partitives review
+          - type: grammar
+            content: Direct object pronouns with food
+          - type: vocabulary
+            content: Ingredients
+          - type: vocabulary
+            content: Cooking verbs
+          - type: vocabulary
+            content: Kitchen tools
+          - type: vocabulary
+            content: Italian dishes
+          - type: listening
+            content: Understand a simple recipe video
+          - type: speaking
+            content: Explain how to cook a simple dish
+          - type: reading
+            content: Read a recipe
+          - type: writing
+            content: Write your own simple recipe
+
+      - code: A2.9
+        title: Opinions and Preferences
+        summary: Express likes, dislikes, and preferences.
+        order_index: 9
+        objectives:
+          - type: communicative_goal
+            content: Express likes and dislikes more clearly
+          - type: communicative_goal
+            content: Give simple reasons
+          - type: communicative_goal
+            content: Compare options
+          - type: communicative_goal
+            content: Say what you prefer
+          - type: grammar
+            content: Piacere expanded
+          - type: grammar
+            content: Indirect pronouns with piacere
+          - type: grammar
+            content: Comparatives and superlatives
+          - type: grammar
+            content: Connectors perche, quindi, pero, invece
+          - type: vocabulary
+            content: Movies
+          - type: vocabulary
+            content: Music
+          - type: vocabulary
+            content: Books
+          - type: vocabulary
+            content: Hobbies
+          - type: vocabulary
+            content: Opinions
+          - type: listening
+            content: Understand short opinions
+          - type: speaking
+            content: Talk about a movie, song, or book
+          - type: reading
+            content: Read short reviews
+          - type: writing
+            content: Write a simple review
+
+      - code: A2.10
+        title: A2 Integration Project
+        summary: Prepare a self-study portfolio for A2.
+        order_index: 10
+        objectives:
+          - type: academic_certification
+            content: Prepare a self-study portfolio
+          - type: academic_certification
+            content: Travel story
+          - type: academic_certification
+            content: Hotel booking message
+          - type: academic_certification
+            content: Health dialogue
+          - type: academic_certification
+            content: Apartment description
+          - type: academic_certification
+            content: Childhood paragraph
+          - type: academic_certification
+            content: Invitation dialogue
+          - type: academic_certification
+            content: Simple review
+          - type: speaking
+            content: Present portfolio orally
+          - type: writing
+            content: Compile written portfolio
+
+  - code: B1
+    name: Intermediate / Threshold
+    order_index: 3
+    goal: Become an independent user who can handle most situations while traveling, understand clear speech on familiar topics, describe experiences, express opinions, and produce connected text.
+    exit_outcomes:
+      - Handle most daily situations independently
+      - Understand clear standard speech
+      - Discuss familiar topics
+      - Narrate past experiences
+      - Express opinions with reasons
+      - Write connected texts
+      - Begin serious certification preparation
+    units:
+      - code: B1.1
+        title: Narrating Clearly
+        summary: Tell stories and sequence events clearly.
+        order_index: 1
+        objectives:
+          - type: communicative_goal
+            content: Tell a story
+          - type: communicative_goal
+            content: Sequence events
+          - type: communicative_goal
+            content: Explain what happened
+          - type: communicative_goal
+            content: React to someone story
+          - type: grammar
+            content: Passato prossimo review
+          - type: grammar
+            content: Imperfetto review
+          - type: grammar
+            content: Contrast background vs completed event
+          - type: grammar
+            content: Time connectors prima, poi, dopo, mentre, alla fine
+          - type: vocabulary
+            content: Life events
+          - type: vocabulary
+            content: Accidents
+          - type: vocabulary
+            content: Travel stories
+          - type: vocabulary
+            content: Reactions
+          - type: listening
+            content: Understand personal stories
+          - type: speaking
+            content: Tell a 2-3 minute story
+          - type: reading
+            content: Read narrative texts
+          - type: writing
+            content: Write a structured narrative
+
+      - code: B1.2
+        title: Opinions and Discussion
+        summary: Express opinions and participate in discussions.
+        order_index: 2
+        objectives:
+          - type: communicative_goal
+            content: Express opinions
+          - type: communicative_goal
+            content: Agree and disagree
+          - type: communicative_goal
+            content: Give reasons
+          - type: communicative_goal
+            content: Ask for someone view
+          - type: grammar
+            content: Opinion structures secondo me, penso che, credo che
+          - type: grammar
+            content: Present subjunctive introduction after opinion verbs
+          - type: grammar
+            content: Connectors pero, tuttavia, infatti, quindi
+          - type: vocabulary
+            content: Opinions
+          - type: vocabulary
+            content: Society
+          - type: vocabulary
+            content: Lifestyle
+          - type: vocabulary
+            content: Education
+          - type: vocabulary
+            content: Work
+          - type: listening
+            content: Understand slow discussions on familiar topics
+          - type: speaking
+            content: Participate in short discussions
+          - type: reading
+            content: Read simple opinion articles
+          - type: writing
+            content: Write an opinion paragraph
+
+      - code: B1.3
+        title: Future, Plans, and Hypothetical Intentions
+        summary: Talk about future plans and make predictions.
+        order_index: 3
+        objectives:
+          - type: communicative_goal
+            content: Talk about future plans
+          - type: communicative_goal
+            content: Make predictions
+          - type: communicative_goal
+            content: Express hopes
+          - type: communicative_goal
+            content: Discuss goals
+          - type: grammar
+            content: Future tense
+          - type: grammar
+            content: Future of irregular verbs
+          - type: grammar
+            content: Spero di and spero che
+          - type: grammar
+            content: Introduction to subjunctive with hope
+          - type: vocabulary
+            content: Career plans
+          - type: vocabulary
+            content: Study plans
+          - type: vocabulary
+            content: Life goals
+          - type: vocabulary
+            content: Technology and future
+          - type: listening
+            content: Understand future plans
+          - type: speaking
+            content: Discuss your future
+          - type: reading
+            content: Read articles about future trends
+          - type: writing
+            content: Write about your future goals
+
+      - code: B1.4
+        title: Advice, Obligation, and Problem Solving
+        summary: Give and ask for advice, discuss problems.
+        order_index: 4
+        objectives:
+          - type: communicative_goal
+            content: Give advice
+          - type: communicative_goal
+            content: Ask for advice
+          - type: communicative_goal
+            content: Discuss problems
+          - type: communicative_goal
+            content: Explain consequences
+          - type: grammar
+            content: Conditional present vorrei, dovrei, potrei
+          - type: grammar
+            content: Bisogna, e necessario, e meglio
+          - type: grammar
+            content: Imperative review
+          - type: grammar
+            content: Pronouns with infinitives
+          - type: vocabulary
+            content: Problems
+          - type: vocabulary
+            content: Advice
+          - type: vocabulary
+            content: Personal decisions
+          - type: vocabulary
+            content: Everyday conflicts
+          - type: listening
+            content: Understand advice conversations
+          - type: speaking
+            content: Give advice in common situations
+          - type: reading
+            content: Read advice columns
+          - type: writing
+            content: Write a response giving advice
+
+      - code: B1.5
+        title: Work and Professional Life
+        summary: Describe work experience and handle job situations.
+        order_index: 5
+        objectives:
+          - type: communicative_goal
+            content: Describe work experience
+          - type: communicative_goal
+            content: Talk about skills
+          - type: communicative_goal
+            content: Handle job-related situations
+          - type: communicative_goal
+            content: Prepare for simple interviews
+          - type: grammar
+            content: Past tense review in professional contexts
+          - type: grammar
+            content: Relative pronouns che, cui
+          - type: grammar
+            content: Formal register introduction
+          - type: grammar
+            content: Direct and indirect pronoun review
+          - type: vocabulary
+            content: CV
+          - type: vocabulary
+            content: Job interviews
+          - type: vocabulary
+            content: Workplace
+          - type: vocabulary
+            content: Skills
+          - type: vocabulary
+            content: Professional communication
+          - type: listening
+            content: Understand job interview questions
+          - type: speaking
+            content: Present your work and study background
+          - type: reading
+            content: Read job ads and simple CVs
+          - type: writing
+            content: Write a simple CV profile and cover message
+
+      - code: B1.6
+        title: Media, News, and Current Events
+        summary: Understand and discuss simple news.
+        order_index: 6
+        objectives:
+          - type: communicative_goal
+            content: Understand simple news
+          - type: communicative_goal
+            content: Summarize a short article
+          - type: communicative_goal
+            content: Discuss current events
+          - type: communicative_goal
+            content: Express concern or interest
+          - type: grammar
+            content: Passive voice introduction
+          - type: grammar
+            content: Impersonal si
+          - type: grammar
+            content: Connectors for cause and effect
+          - type: grammar
+            content: Reported information introduction
+          - type: vocabulary
+            content: News
+          - type: vocabulary
+            content: Society
+          - type: vocabulary
+            content: Environment
+          - type: vocabulary
+            content: Technology
+          - type: vocabulary
+            content: Public life
+          - type: listening
+            content: Understand simplified news
+          - type: speaking
+            content: Summarize a news item
+          - type: reading
+            content: Read short news articles
+          - type: writing
+            content: Write a short news summary
+
+      - code: B1.7
+        title: Travel Problems and Formal Requests
+        summary: Make complaints and handle formal requests.
+        order_index: 7
+        objectives:
+          - type: communicative_goal
+            content: Make complaints
+          - type: communicative_goal
+            content: Ask for refunds
+          - type: communicative_goal
+            content: Explain problems formally
+          - type: communicative_goal
+            content: Negotiate simple solutions
+          - type: grammar
+            content: Formal imperative
+          - type: grammar
+            content: Conditional for politeness
+          - type: grammar
+            content: Object pronouns in formal contexts
+          - type: grammar
+            content: Vorrei, mi potrebbe, sarebbe possibile
+          - type: vocabulary
+            content: Complaints
+          - type: vocabulary
+            content: Customer service
+          - type: vocabulary
+            content: Travel issues
+          - type: vocabulary
+            content: Bureaucracy
+          - type: listening
+            content: Understand service interactions
+          - type: speaking
+            content: Make a polite complaint
+          - type: reading
+            content: Read customer-service emails
+          - type: writing
+            content: Write a formal complaint email
+
+      - code: B1.8
+        title: Culture, Traditions, and Regional Italy
+        summary: Talk about traditions and compare cultures.
+        order_index: 8
+        objectives:
+          - type: communicative_goal
+            content: Talk about traditions
+          - type: communicative_goal
+            content: Compare cultures
+          - type: communicative_goal
+            content: Explain customs
+          - type: communicative_goal
+            content: Discuss regional differences
+          - type: grammar
+            content: Comparatives and superlatives review
+          - type: grammar
+            content: Mentre, invece, rispetto a
+          - type: grammar
+            content: Relative clauses review
+          - type: grammar
+            content: Past habitual narration
+          - type: vocabulary
+            content: Traditions
+          - type: vocabulary
+            content: Festivals
+          - type: vocabulary
+            content: Food culture
+          - type: vocabulary
+            content: Regions
+          - type: vocabulary
+            content: Cultural identity
+          - type: listening
+            content: Understand cultural explanations
+          - type: speaking
+            content: Compare your culture with Italian culture
+          - type: reading
+            content: Read cultural articles
+          - type: writing
+            content: Write a cultural comparison
+
+      - code: B1.9
+        title: Education and Learning
+        summary: Discuss learning experiences and preferences.
+        order_index: 9
+        objectives:
+          - type: communicative_goal
+            content: Talk about your learning experience
+          - type: communicative_goal
+            content: Discuss school and university
+          - type: communicative_goal
+            content: Describe learning difficulties
+          - type: communicative_goal
+            content: Explain preferences
+          - type: grammar
+            content: Subjunctive after necessity and opinion
+          - type: grammar
+            content: E importante che
+          - type: grammar
+            content: Penso che
+          - type: grammar
+            content: Preferisco che
+          - type: vocabulary
+            content: Education
+          - type: vocabulary
+            content: Exams
+          - type: vocabulary
+            content: Learning methods
+          - type: vocabulary
+            content: University
+          - type: vocabulary
+            content: Academic subjects
+          - type: listening
+            content: Understand study-related conversations
+          - type: speaking
+            content: Discuss learning strategies
+          - type: reading
+            content: Read educational texts
+          - type: writing
+            content: Write about your learning journey
+
+      - code: B1.10
+        title: Relationships and Social Interaction
+        summary: Talk about friendships and resolve misunderstandings.
+        order_index: 10
+        objectives:
+          - type: communicative_goal
+            content: Talk about friendships
+          - type: communicative_goal
+            content: Describe relationships
+          - type: communicative_goal
+            content: Resolve misunderstandings
+          - type: communicative_goal
+            content: Express emotions
+          - type: grammar
+            content: Reflexive and reciprocal verbs
+          - type: grammar
+            content: Pronouns review
+          - type: grammar
+            content: Mi sembra che
+          - type: grammar
+            content: Emotional expressions with subjunctive introduction
+          - type: vocabulary
+            content: Relationships
+          - type: vocabulary
+            content: Emotions
+          - type: vocabulary
+            content: Personality
+          - type: vocabulary
+            content: Social situations
+          - type: listening
+            content: Understand conversations about relationships
+          - type: speaking
+            content: Discuss social situations and emotions
+          - type: reading
+            content: Read personal letters and messages
+          - type: writing
+            content: Write a personal message explaining feelings
+
+      - code: B1.11
+        title: "Certification Skills: B1 Foundation"
+        summary: Develop exam skills for B1 certification.
+        order_index: 11
+        objectives:
+          - type: academic_certification
+            content: Listening - identify main idea
+          - type: academic_certification
+            content: Listening - extract details
+          - type: academic_certification
+            content: Listening - understand speakers intentions
+          - type: academic_certification
+            content: Reading - understand short articles
+          - type: academic_certification
+            content: Reading - identify opinions
+          - type: academic_certification
+            content: Reading - match information
+          - type: academic_certification
+            content: Writing - informal email
+          - type: academic_certification
+            content: Writing - formal email
+          - type: academic_certification
+            content: Writing - short opinion text
+          - type: academic_certification
+            content: Speaking - personal interview
+          - type: academic_certification
+            content: Speaking - describe experiences
+          - type: academic_certification
+            content: Speaking - express opinions
+          - type: listening
+            content: Practice exam-style listening tasks
+          - type: speaking
+            content: Practice oral exam format
+          - type: reading
+            content: Practice exam-style reading tasks
+          - type: writing
+            content: Practice exam-style writing tasks
+
+      - code: B1.12
+        title: B1 Integration Project
+        summary: Create a B1 portfolio demonstrating all skills.
+        order_index: 12
+        objectives:
+          - type: academic_certification
+            content: Create a B1 portfolio
+          - type: academic_certification
+            content: Personal narrative
+          - type: academic_certification
+            content: Opinion essay
+          - type: academic_certification
+            content: Formal complaint email
+          - type: academic_certification
+            content: Job profile
+          - type: academic_certification
+            content: News summary
+          - type: academic_certification
+            content: Cultural comparison
+          - type: academic_certification
+            content: Oral presentation on a familiar topic
+          - type: speaking
+            content: Present portfolio orally
+          - type: writing
+            content: Compile written portfolio
+
+  - code: B2
+    name: Upper Intermediate / Vantage
+    order_index: 4
+    goal: Use Italian as a working academic and professional language with ability to understand complex texts, follow extended speech, discuss abstract topics, interact with fluency, and write structured arguments.
+    exit_outcomes:
+      - Interact with native speakers with fluency and spontaneity
+      - Understand extended speech and lectures on familiar topics
+      - Understand news and current-affairs content
+      - Read articles and reports with viewpoints
+      - Write clear, detailed texts
+      - Argue for and against positions
+      - Function in many academic and professional contexts
+      - Prepare seriously for B2 certification
+    units:
+      - code: B2.1
+        title: Advanced Tense Control
+        summary: Narrate complex events with accurate tense usage.
+        order_index: 1
+        objectives:
+          - type: communicative_goal
+            content: Narrate complex events
+          - type: communicative_goal
+            content: Explain causes and consequences
+          - type: communicative_goal
+            content: Shift between past, present, and future accurately
+          - type: grammar
+            content: Passato prossimo
+          - type: grammar
+            content: Imperfetto
+          - type: grammar
+            content: Trapassato prossimo
+          - type: grammar
+            content: Future tense
+          - type: grammar
+            content: Conditional
+          - type: grammar
+            content: Sequence of tenses introduction
+          - type: vocabulary
+            content: Life events
+          - type: vocabulary
+            content: Social change
+          - type: vocabulary
+            content: Personal development
+          - type: vocabulary
+            content: Cause and effect language
+          - type: listening
+            content: Understand extended personal narratives
+          - type: speaking
+            content: Tell a complex life or work story
+          - type: reading
+            content: Read long-form narrative articles
+          - type: writing
+            content: Write a structured narrative with reflection
+
+      - code: B2.2
+        title: Full Subjunctive System I
+        summary: Express opinions, doubt, and emotion with subjunctive.
+        order_index: 2
+        objectives:
+          - type: communicative_goal
+            content: Express opinions with nuance
+          - type: communicative_goal
+            content: Express doubt
+          - type: communicative_goal
+            content: Express emotion
+          - type: communicative_goal
+            content: Express necessity
+          - type: grammar
+            content: Present subjunctive review
+          - type: grammar
+            content: Past subjunctive
+          - type: grammar
+            content: Subjunctive after opinion
+          - type: grammar
+            content: Subjunctive after doubt
+          - type: grammar
+            content: Subjunctive after emotion
+          - type: grammar
+            content: Subjunctive after necessity
+          - type: grammar
+            content: Indicative vs subjunctive contrast
+          - type: vocabulary
+            content: Abstract opinions
+          - type: vocabulary
+            content: Feelings
+          - type: vocabulary
+            content: Judgement
+          - type: vocabulary
+            content: Social issues
+          - type: listening
+            content: Recognize subjunctive in spoken opinions
+          - type: speaking
+            content: Give nuanced opinions
+          - type: reading
+            content: Read opinion articles
+          - type: writing
+            content: Write an argumentative paragraph using subjunctive structures
+
+      - code: B2.3
+        title: Full Subjunctive System II
+        summary: Discuss hypothetical situations and conditions.
+        order_index: 3
+        objectives:
+          - type: communicative_goal
+            content: Discuss hypothetical situations
+          - type: communicative_goal
+            content: Express conditions
+          - type: communicative_goal
+            content: Talk about unreal or uncertain events
+          - type: grammar
+            content: Imperfect subjunctive
+          - type: grammar
+            content: Pluperfect subjunctive
+          - type: grammar
+            content: Conditional past
+          - type: grammar
+            content: Hypothetical clauses for reality
+          - type: grammar
+            content: Hypothetical clauses for possibility
+          - type: grammar
+            content: Hypothetical clauses for unreality
+          - type: vocabulary
+            content: Hypothetical situations
+          - type: vocabulary
+            content: Regret
+          - type: vocabulary
+            content: Possibility
+          - type: vocabulary
+            content: Decision-making
+          - type: listening
+            content: Understand speculative discussions
+          - type: speaking
+            content: Discuss what would happen if
+          - type: reading
+            content: Read essays with hypothetical reasoning
+          - type: writing
+            content: Write a conditional argument
+
+      - code: B2.4
+        title: Argumentation and Debate
+        summary: Build arguments and defend positions.
+        order_index: 4
+        objectives:
+          - type: communicative_goal
+            content: Build arguments
+          - type: communicative_goal
+            content: Defend a position
+          - type: communicative_goal
+            content: Challenge ideas politely
+          - type: communicative_goal
+            content: Give evidence and examples
+          - type: grammar
+            content: Argument connectors inoltre, tuttavia, nonostante, sebbene, poiche, di conseguenza
+          - type: grammar
+            content: Concessive clauses
+          - type: grammar
+            content: Causal clauses
+          - type: grammar
+            content: Contrast clauses
+          - type: vocabulary
+            content: Debate language
+          - type: vocabulary
+            content: Agreement and disagreement
+          - type: vocabulary
+            content: Evidence
+          - type: vocabulary
+            content: Public issues
+          - type: listening
+            content: Understand debates and interviews
+          - type: speaking
+            content: Debate a familiar abstract topic
+          - type: reading
+            content: Read editorials
+          - type: writing
+            content: Write a structured argumentative essay
+
+      - code: B2.5
+        title: Formal and Academic Writing
+        summary: Write formal emails, summaries, and reports.
+        order_index: 5
+        objectives:
+          - type: communicative_goal
+            content: Write formal emails
+          - type: communicative_goal
+            content: Write summaries
+          - type: communicative_goal
+            content: Write reports
+          - type: communicative_goal
+            content: Structure essays clearly
+          - type: grammar
+            content: Formal register
+          - type: grammar
+            content: Nominalization introduction
+          - type: grammar
+            content: Passive voice
+          - type: grammar
+            content: Impersonal constructions
+          - type: grammar
+            content: Formal connectors
+          - type: vocabulary
+            content: Academic verbs analyze, demonstrate, argue, suggest, evaluate
+          - type: vocabulary
+            content: Report language
+          - type: vocabulary
+            content: Formal email phrases
+          - type: listening
+            content: Understand formal announcements and short lectures
+          - type: speaking
+            content: Present a structured argument
+          - type: reading
+            content: Read academic-style texts
+          - type: writing
+            content: Write formal email, summary, report, and opinion essay
+
+      - code: B2.6
+        title: Media, Politics, and Society
+        summary: Discuss public issues and understand media viewpoints.
+        order_index: 6
+        objectives:
+          - type: communicative_goal
+            content: Discuss public issues
+          - type: communicative_goal
+            content: Understand viewpoints in media
+          - type: communicative_goal
+            content: Compare political and social perspectives
+          - type: communicative_goal
+            content: Summarize arguments
+          - type: grammar
+            content: Reported speech
+          - type: grammar
+            content: Passive and impersonal forms
+          - type: grammar
+            content: Advanced relative clauses
+          - type: grammar
+            content: Subordinate clauses
+          - type: vocabulary
+            content: Government
+          - type: vocabulary
+            content: Society
+          - type: vocabulary
+            content: Rights
+          - type: vocabulary
+            content: Economy basics
+          - type: vocabulary
+            content: Media
+          - type: vocabulary
+            content: Public policy
+          - type: listening
+            content: Understand news and current-affairs programs
+          - type: speaking
+            content: Discuss a social issue
+          - type: reading
+            content: Read news analysis and opinion pieces
+          - type: writing
+            content: Write a media summary and response
+
+      - code: B2.7
+        title: Work, Professional Communication, and Presentations
+        summary: Participate in meetings and give presentations.
+        order_index: 7
+        objectives:
+          - type: communicative_goal
+            content: Participate in meetings
+          - type: communicative_goal
+            content: Present a project
+          - type: communicative_goal
+            content: Express professional opinions
+          - type: communicative_goal
+            content: Negotiate and clarify
+          - type: grammar
+            content: Formal conditional
+          - type: grammar
+            content: Passive voice review
+          - type: grammar
+            content: Discourse markers
+          - type: grammar
+            content: Relative pronouns il quale, la quale, i quali, le quali
+          - type: vocabulary
+            content: Workplace communication
+          - type: vocabulary
+            content: Projects
+          - type: vocabulary
+            content: Meetings
+          - type: vocabulary
+            content: Negotiation
+          - type: vocabulary
+            content: Problem-solving
+          - type: listening
+            content: Understand professional discussions
+          - type: speaking
+            content: Give a 5-7 minute presentation
+          - type: reading
+            content: Read professional reports
+          - type: writing
+            content: Write a professional proposal or meeting summary
+
+      - code: B2.8
+        title: University and Academic Life
+        summary: Communicate in academic contexts.
+        order_index: 8
+        objectives:
+          - type: communicative_goal
+            content: Discuss academic subjects
+          - type: communicative_goal
+            content: Understand course descriptions
+          - type: communicative_goal
+            content: Communicate with professors
+          - type: communicative_goal
+            content: Explain research interests
+          - type: grammar
+            content: Academic syntax
+          - type: grammar
+            content: Complex noun phrases
+          - type: grammar
+            content: Passive and impersonal academic style
+          - type: grammar
+            content: Advanced connectors
+          - type: vocabulary
+            content: University
+          - type: vocabulary
+            content: Research
+          - type: vocabulary
+            content: Exams
+          - type: vocabulary
+            content: Lectures
+          - type: vocabulary
+            content: Academic administration
+          - type: vocabulary
+            content: Fields of study
+          - type: listening
+            content: Understand short lectures
+          - type: speaking
+            content: Explain an academic interest
+          - type: reading
+            content: Read university pages and academic abstracts
+          - type: writing
+            content: Write a formal email to a professor and an academic summary
+
+      - code: B2.9
+        title: Literature, Cinema, and Culture
+        summary: Discuss films, books, and interpret themes.
+        order_index: 9
+        objectives:
+          - type: communicative_goal
+            content: Discuss films and books
+          - type: communicative_goal
+            content: Interpret themes
+          - type: communicative_goal
+            content: Express aesthetic opinions
+          - type: communicative_goal
+            content: Connect culture with history
+          - type: grammar
+            content: Descriptive and interpretive language
+          - type: grammar
+            content: Relative clauses review
+          - type: grammar
+            content: Subjunctive in evaluation
+          - type: grammar
+            content: Past tenses in literary and cultural discussion
+          - type: vocabulary
+            content: Cinema
+          - type: vocabulary
+            content: Literature
+          - type: vocabulary
+            content: Art
+          - type: vocabulary
+            content: History
+          - type: vocabulary
+            content: Interpretation
+          - type: vocabulary
+            content: Cultural criticism
+          - type: listening
+            content: Understand film reviews and interviews
+          - type: speaking
+            content: Discuss a film or book
+          - type: reading
+            content: Read short literary excerpts or reviews
+          - type: writing
+            content: Write a cultural review
+
+      - code: B2.10
+        title: Advanced Listening and Spoken Interaction
+        summary: Follow fast conversations and manage spoken interaction.
+        order_index: 10
+        objectives:
+          - type: communicative_goal
+            content: Follow fast conversations
+          - type: communicative_goal
+            content: Interrupt politely
+          - type: communicative_goal
+            content: Ask for clarification
+          - type: communicative_goal
+            content: Reformulate ideas
+          - type: communicative_goal
+            content: Manage misunderstandings
+          - type: grammar
+            content: Discourse markers cioe, insomma, allora, comunque, in realta
+          - type: grammar
+            content: Pragmatic expressions
+          - type: grammar
+            content: Register shifts
+          - type: vocabulary
+            content: Conversational fillers
+          - type: vocabulary
+            content: Idiomatic expressions
+          - type: vocabulary
+            content: Clarification language
+          - type: vocabulary
+            content: Nuance and tone
+          - type: listening
+            content: Understand podcasts, interviews, and native conversations
+          - type: speaking
+            content: Participate in spontaneous conversation
+          - type: reading
+            content: Read informal forum or comment-style texts
+          - type: writing
+            content: Write a reflective response to spoken content
+
+      - code: B2.11
+        title: "Certification Preparation: B2"
+        summary: Prepare for B2 certification exams.
+        order_index: 11
+        objectives:
+          - type: academic_certification
+            content: Listening - understand interviews
+          - type: academic_certification
+            content: Listening - understand lectures
+          - type: academic_certification
+            content: Listening - understand news
+          - type: academic_certification
+            content: Listening - identify viewpoint and implication
+          - type: academic_certification
+            content: Reading - understand long articles
+          - type: academic_certification
+            content: Reading - identify argument structure
+          - type: academic_certification
+            content: Reading - infer meaning from context
+          - type: academic_certification
+            content: Reading - recognize author attitude
+          - type: academic_certification
+            content: Writing - formal email
+          - type: academic_certification
+            content: Writing - essay
+          - type: academic_certification
+            content: Writing - report
+          - type: academic_certification
+            content: Writing - summary
+          - type: academic_certification
+            content: Writing - argumentative response
+          - type: academic_certification
+            content: Speaking - monologue
+          - type: academic_certification
+            content: Speaking - discussion
+          - type: academic_certification
+            content: Speaking - opinion defense
+          - type: academic_certification
+            content: Speaking - image or text-based commentary
+          - type: academic_certification
+            content: Speaking - formal interaction
+          - type: academic_certification
+            content: Grammar - subjunctive
+          - type: academic_certification
+            content: Grammar - hypothetical clauses
+          - type: academic_certification
+            content: Grammar - pronouns
+          - type: academic_certification
+            content: Grammar - passive
+          - type: academic_certification
+            content: Grammar - reported speech
+          - type: academic_certification
+            content: Grammar - connectors
+          - type: academic_certification
+            content: Grammar - register
+          - type: listening
+            content: Practice exam-style listening tasks
+          - type: speaking
+            content: Practice oral exam format
+          - type: reading
+            content: Practice exam-style reading tasks
+          - type: writing
+            content: Practice exam-style writing tasks
+
+      - code: B2.12
+        title: B2 Capstone Project
+        summary: Create a B2-level academic and communication portfolio.
+        order_index: 12
+        objectives:
+          - type: academic_certification
+            content: Formal email - request information from a university office
+          - type: academic_certification
+            content: Argumentative essay - advantages and disadvantages of remote work
+          - type: academic_certification
+            content: News summary - summarize and respond to an Italian news article
+          - type: academic_certification
+            content: Oral presentation - 7-minute presentation on Italian cultural or social topic
+          - type: academic_certification
+            content: Debate task - defend a position on technology, education, environment, or migration
+          - type: academic_certification
+            content: Listening journal - summarize 10 podcast or news episodes
+          - type: academic_certification
+            content: Reading portfolio - summarize 10 articles and identify author viewpoints
+          - type: speaking
+            content: Present capstone portfolio orally
+          - type: writing
+            content: Compile written capstone portfolio

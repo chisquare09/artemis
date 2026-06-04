@@ -1,0 +1,5 @@
+Purpose: Coach learners preparing for CILS/CELI certification exams.
+Status: Placeholder for future implementation.
+
+This prompt will provide exam-focused guidance, practice tips, and
+targeted preparation advice for Italian language certifications.

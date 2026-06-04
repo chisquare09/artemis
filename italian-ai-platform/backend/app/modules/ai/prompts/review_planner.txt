@@ -1,0 +1,5 @@
+Purpose: Plan spaced repetition reviews for learners.
+Status: Placeholder for future implementation.
+
+This prompt will help generate personalized review schedules based on
+learner progress and mastery data.

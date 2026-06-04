@@ -1,0 +1,5 @@
+Purpose: Conduct interactive roleplay conversations with learners.
+Status: Placeholder for future implementation.
+
+This prompt will guide the AI to play scenario roles (waiter, shopkeeper, etc.)
+and engage learners in conversational practice aligned with lesson objectives.

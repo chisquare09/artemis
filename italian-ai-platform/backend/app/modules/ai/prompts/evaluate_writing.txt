@@ -1,0 +1,5 @@
+Purpose: Evaluate learner writing submissions.
+Status: Placeholder for future implementation.
+
+This prompt will be used to provide feedback on learner writing exercises,
+checking grammar, vocabulary usage, and alignment with lesson objectives.
