@@ -33,7 +33,7 @@ def test_summary_includes_counts():
     assert "activities_count" in summary
     assert summary["levels_count"] == 4
     assert summary["units_count"] == 44
-    assert summary["activities_count"] == 7
+    assert summary["activities_count"] == 308
 
 
 def test_importer_summary_values():
