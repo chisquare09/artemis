@@ -1,4 +1,6 @@
-from typing import Optional
+from __future__ import annotations
+
+from typing import Dict, List, Optional
 
 from pydantic import BaseModel, model_validator
 
@@ -21,8 +23,8 @@ class UnitSeed(BaseModel):
     title: str
     summary: Optional[str] = None
     order_index: int
-    objectives: list[ObjectiveSeed] = []
-    activities: list[ActivitySeed] = []
+    objectives: List[ObjectiveSeed] = []
+    activities: List[ActivitySeed] = []
 
     @model_validator(mode="after")
     def check_has_content(self):
@@ -36,8 +38,8 @@ class LevelSeed(BaseModel):
     name: str
     order_index: int
     goal: Optional[str] = None
-    exit_outcomes: list[str] = []
-    units: list[UnitSeed] = []
+    exit_outcomes: List[str] = []
+    units: List[UnitSeed] = []
 
 
 class StudyModeSeed(BaseModel):
@@ -55,8 +57,8 @@ class CurriculumInfoSeed(BaseModel):
 
 class CurriculumSeed(BaseModel):
     curriculum: CurriculumInfoSeed
-    study_modes: list[StudyModeSeed] = []
-    levels: list[LevelSeed] = []
+    study_modes: List[StudyModeSeed] = []
+    levels: List[LevelSeed] = []
 
 
 # API Response Schemas
@@ -78,8 +80,8 @@ class CurriculumOverviewResponse(BaseModel):
     description: Optional[str] = None
     language: str
     version: str
-    levels: list[LevelSummaryResponse] = []
-    study_modes: list[StudyModeResponse] = []
+    levels: List[LevelSummaryResponse] = []
+    study_modes: List[StudyModeResponse] = []
 
 
 class LevelResponse(BaseModel):
@@ -87,7 +89,7 @@ class LevelResponse(BaseModel):
     name: str
     order_index: int
     goal: Optional[str] = None
-    exit_outcomes: list[str] = []
+    exit_outcomes: List[str] = []
 
 
 class UnitSummaryResponse(BaseModel):
@@ -111,5 +113,5 @@ class UnitDetailResponse(BaseModel):
     summary: Optional[str] = None
     order_index: int
     level_code: str
-    objectives: dict[str, list[str]] = {}
-    activities: list[ActivityResponse] = []
+    objectives: Dict[str, List[str]] = {}
+    activities: List[ActivityResponse] = []
