@@ -52,3 +52,15 @@ def test_unknown_unit_returns_404():
 def test_unknown_session_returns_404():
     response = client.post("/api/speaking/roleplay/respond", json={"session_id": "fake-session", "message": "test"})
     assert response.status_code == 404
+
+
+def test_start_generic_roleplay_for_b2_unit_returns_200():
+    response = client.post("/api/speaking/roleplay/start", json={"unit_code": "B2.12", "scenario_id": "unit-default"})
+    assert response.status_code == 200
+    assert response.json()["scenario_id"] == "unit-default"
+
+
+def test_non_a1_5_cafe_scenario_defaults_to_unit_roleplay():
+    response = client.post("/api/speaking/roleplay/start", json={"unit_code": "A2.1", "scenario_id": "cafe_ordering"})
+    assert response.status_code == 200
+    assert response.json()["scenario_id"] == "unit-default"

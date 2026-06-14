@@ -73,3 +73,9 @@ def test_answer_question_works_without_materials():
     })
     assert response.status_code == 200
     assert "answer" in response.json()
+
+
+def test_explain_lesson_a2_1_returns_200():
+    response = client.post("/api/ai/explain-lesson", json={"unit_code": "A2.1"})
+    assert response.status_code == 200
+    assert response.json()["unit_code"] == "A2.1"

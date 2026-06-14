@@ -15,6 +15,8 @@ import { MaterialList } from "@/features/materials";
 import { ModeSelector } from "@/features/lessons/ModeSelector";
 import { ModeGuidance } from "@/features/lessons/ModeGuidance";
 
+export const dynamic = "force-dynamic";
+
 interface PageProps {
   params: Promise<{ unitCode: string }>;
   searchParams: Promise<{ mode?: string }>;
@@ -32,18 +34,16 @@ export default async function UnitPage({ params, searchParams }: PageProps) {
     return (
       <div className="text-center py-12">
         <h2 className="text-xl font-semibold text-gray-700">Could not load lesson data</h2>
-        <p className="text-gray-500 mt-2">Please make sure the backend API is running.</p>
+        <p className="text-gray-500 mt-2">Please make sure the backend API is running and this unit exists in the curriculum.</p>
       </div>
     );
   }
 
   let unitProgress = null;
-  if (lesson.unit_code === "A1.5") {
-    try {
-      unitProgress = await getUnitProgress(lesson.unit_code);
-    } catch {
-      // Progress fetch failed, continue without it
-    }
+  try {
+    unitProgress = await getUnitProgress(lesson.unit_code);
+  } catch {
+    unitProgress = null;
   }
 
   return (
@@ -60,18 +60,14 @@ export default async function UnitPage({ params, searchParams }: PageProps) {
         <LessonObjectives objectives={lesson.objectives} />
         <SectionHeader title="Activities" />
         <LessonActivityList activities={lesson.activities} />
-        {lesson.unit_code === "A1.5" && (
-          <>
-            <SectionHeader title="Learning Materials" />
-            <MaterialList unitCode={lesson.unit_code} />
-            <SectionHeader title="Listening Practice" />
-            <ListeningActivity unitCode={lesson.unit_code} />
-            <SectionHeader title="Speaking Practice" />
-            <SpeakingRoleplay unitCode={lesson.unit_code} />
-            <SectionHeader title="Practice Quiz" />
-            <ExerciseSet unitCode={lesson.unit_code} studyMode={studyMode} />
-          </>
-        )}
+        <SectionHeader title="Learning Materials" />
+        <MaterialList unitCode={lesson.unit_code} />
+        <SectionHeader title="Listening Practice" />
+        <ListeningActivity unitCode={lesson.unit_code} />
+        <SectionHeader title="Speaking Practice" />
+        <SpeakingRoleplay unitCode={lesson.unit_code} />
+        <SectionHeader title="Practice Quiz" />
+        <ExerciseSet unitCode={lesson.unit_code} studyMode={studyMode} />
       </div>
       <div className="space-y-6">
         <AITutorPanel unitCode={lesson.unit_code} studyMode={studyMode} />
@@ -81,7 +77,7 @@ export default async function UnitPage({ params, searchParams }: PageProps) {
             <WeakPointsList weakPoints={unitProgress.weak_points} />
           </>
         ) : (
-          <p className="text-sm text-gray-500">Progress tracking available for A1.5</p>
+          <p className="text-sm text-gray-500">Progress tracking could not be loaded.</p>
         )}
       </div>
     </div>

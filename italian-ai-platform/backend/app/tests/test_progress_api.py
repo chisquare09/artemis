@@ -55,3 +55,21 @@ def test_unknown_unit_returns_404():
     response = client.get("/api/progress/units/UNKNOWN")
     assert response.status_code == 404
     assert response.json()["error"]["code"] == "NOT_FOUND"
+
+
+def test_unit_progress_for_a2_1():
+    response = client.get("/api/progress/units/A2.1")
+    assert response.status_code == 200
+    assert response.json()["unit_code"] == "A2.1"
+
+
+def test_exercise_result_for_b2_12_updates_progress():
+    response = client.post("/api/progress/exercise-result", json={
+        "unit_code": "B2.12",
+        "exercise_id": "test-b2-12",
+        "score": 85,
+        "weak_points": [],
+        "skill_focus": "writing"
+    })
+    assert response.status_code == 200
+    assert response.json()["unit_progress"]["unit_code"] == "B2.12"

@@ -8,6 +8,8 @@ import {
   RecentActivityList,
 } from "@/features/progress";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProgressPage() {
   let data;
   try {

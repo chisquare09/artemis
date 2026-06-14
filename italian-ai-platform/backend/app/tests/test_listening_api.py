@@ -61,3 +61,18 @@ def test_unknown_unit_returns_404():
     response = client.get("/api/listening/units/UNKNOWN")
     assert response.status_code == 404
     assert response.json()["error"]["code"] == "NOT_FOUND"
+
+
+def test_get_listening_task_for_b1_unit_returns_200():
+    response = client.get("/api/listening/units/B1.3")
+    assert response.status_code == 200
+    assert response.json()["unit_code"] == "B1.3"
+    assert len(response.json()["questions"]) == 3
+
+
+def test_submit_generic_listening_returns_score():
+    task = client.get("/api/listening/units/A2.1").json()
+    answers = [{"question_id": q["question_id"], "answer": "Past Experiences"} for q in task["questions"]]
+    response = client.post("/api/listening/submit", json={"unit_code": "A2.1", "answers": answers})
+    assert response.status_code == 200
+    assert "score" in response.json()

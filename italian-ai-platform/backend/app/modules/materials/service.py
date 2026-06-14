@@ -1,17 +1,15 @@
 import uuid
 from app.core.exceptions import NotFoundException, BadRequestException
+from app.modules.curriculum.unit_catalog import ensure_unit_exists
 from app.modules.materials.chunker import chunk_text
 from app.modules.materials.schema import SourceType
 
 _materials: dict[str, dict] = {}
 _unit_links: dict[str, list[str]] = {}  # unit_code -> [material_ids]
 
-VALID_UNITS = {"A1.5"}
-
 
 def _validate_unit(unit_code: str):
-    if unit_code not in VALID_UNITS:
-        raise NotFoundException(f"Unit {unit_code} not found")
+    ensure_unit_exists(unit_code)
 
 
 def create_material(data: dict) -> dict:

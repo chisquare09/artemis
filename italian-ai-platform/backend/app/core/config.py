@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     SUPABASE_SERVICE_ROLE_KEY: str = ""
     SUPABASE_JWT_SECRET: str = ""  # Required for production JWT verification
     GEMINI_API_KEY: str = ""
+    GEMINI_MODEL: str = "gemini-3.5-flash"
+    AI_PROVIDER: str = "auto"
     GROQ_API_KEY: str = ""
     STORAGE_BUCKET: str = ""
 

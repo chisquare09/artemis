@@ -68,7 +68,7 @@ export function SpeakingRoleplay({ unitCode }: Props) {
   return (
     <Card>
       <h3 className="font-semibold mb-2">Speaking Roleplay</h3>
-      <p className="text-sm text-gray-500 mb-2">Practice ordering at an Italian café.</p>
+      <p className="text-sm text-gray-500 mb-2">{unitCode === "A1.5" ? "Practice ordering at an Italian café." : "Practice a short Italian conversation for this unit."}</p>
       <p className="text-xs text-gray-400 mb-4">Voice practice will be added later. For now, this is text-based speaking roleplay.</p>
       {error && <p className="text-sm text-red-500 mb-4">{error}</p>}
       {!sessionId && !result && (

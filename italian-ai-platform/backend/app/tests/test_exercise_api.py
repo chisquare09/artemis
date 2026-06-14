@@ -42,3 +42,20 @@ def test_unknown_unit_returns_404():
 def test_unknown_exercise_id_returns_404():
     response = client.post("/api/exercises/submit", json={"exercise_id": "fake-id", "answers": []})
     assert response.status_code == 404
+
+
+def test_generate_a2_1_returns_200():
+    response = client.post("/api/exercises/generate", json={"unit_code": "A2.1", "activity_type": "quiz", "count": 5})
+    assert response.status_code == 200
+    data = response.json()
+    assert data["unit_code"] == "A2.1"
+    assert len(data["items"]) > 0
+
+
+def test_submit_generated_a2_1_returns_feedback():
+    gen = client.post("/api/exercises/generate", json={"unit_code": "A2.1", "activity_type": "quiz", "count": 3})
+    data = gen.json()
+    answers = [{"item_id": item["item_id"], "answer": "test answer"} for item in data["items"]]
+    submit = client.post("/api/exercises/submit", json={"exercise_id": data["exercise_id"], "answers": answers})
+    assert submit.status_code == 200
+    assert "score" in submit.json()

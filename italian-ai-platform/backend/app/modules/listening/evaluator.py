@@ -57,3 +57,42 @@ def calculate_score(feedbacks: list[dict]) -> int:
 
 def collect_weak_points(feedbacks: list[dict]) -> list[str]:
     return list({f["weak_point"] for f in feedbacks if f.get("weak_point")})
+
+
+def build_generic_listening_questions(unit) -> list[dict]:
+    topic_keywords = [word.lower().strip(':,') for word in unit.title.split() if len(word) > 3]
+    objective_values = [item for items in unit.objectives.values() for item in items]
+    first_objective = objective_values[0] if objective_values else unit.title
+    skill_focuses = [activity.skill_focus for activity in unit.activities if activity.skill_focus]
+    first_skill = skill_focuses[0] if skill_focuses else "integrated"
+    objective_keywords = [word.lower().strip(':,') for word in first_objective.split() if len(word) > 3][:3] or topic_keywords[:2]
+
+    return [
+        {
+            "question_id": f"{unit.code}-listen-1",
+            "question_type": "short_answer",
+            "prompt": "What is the topic of this listening passage?",
+            "correct_keywords": topic_keywords[:3] or [unit.code.lower()],
+            "correct_answer": unit.title,
+            "explanation": f"The passage is about {unit.title}.",
+            "weak_point": "listening_main_idea",
+        },
+        {
+            "question_id": f"{unit.code}-listen-2",
+            "question_type": "short_answer",
+            "prompt": "Name one objective or skill mentioned in the passage.",
+            "correct_keywords": objective_keywords,
+            "correct_answer": first_objective,
+            "explanation": f"One unit objective is: {first_objective}.",
+            "weak_point": "listening_detail",
+        },
+        {
+            "question_id": f"{unit.code}-listen-3",
+            "question_type": "short_answer",
+            "prompt": "Which skill focus is practiced in this lesson?",
+            "correct_keywords": [first_skill.lower()],
+            "correct_answer": first_skill,
+            "explanation": f"The activity skill focus is {first_skill}.",
+            "weak_point": "listening_skill_focus",
+        },
+    ]

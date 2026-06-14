@@ -149,3 +149,119 @@ def generate_a1_5_quiz(count: int = 5, study_mode: str = "daily_communication") 
         "study_mode": study_mode,
         "_internal": items_source[:count],
     }
+
+
+def _first_objective(unit, objective_type: str, fallback: str) -> str:
+    items = unit.objectives.get(objective_type, [])
+    return items[0] if items else fallback
+
+
+def _objective_options(unit, preferred_type: str, correct: str, fallback_options: list[str]) -> list[str]:
+    values = [item for item in unit.objectives.get(preferred_type, []) if item != correct]
+    values.extend(option for option in fallback_options if option != correct)
+    options = [correct]
+    for value in values:
+        if value not in options:
+            options.append(value)
+        if len(options) == 4:
+            break
+    while len(options) < 4:
+        options.append(f"Practice topic {len(options)}")
+    return options
+
+
+def generate_curriculum_quiz(unit, count: int = 5, study_mode: str = "daily_communication") -> dict:
+    exercise_id = str(uuid.uuid4())
+    communication_goal = _first_objective(unit, "communicative_goal", unit.title)
+    grammar_goal = _first_objective(unit, "grammar", unit.title)
+    vocabulary_goal = _first_objective(unit, "vocabulary", unit.title)
+    speaking_goal = _first_objective(unit, "speaking", communication_goal)
+    writing_goal = _first_objective(unit, "writing", communication_goal)
+    reading_goal = _first_objective(unit, "reading", communication_goal)
+    mode_is_academic = study_mode == "academic_purpose"
+
+    base_items = [
+        {
+            "item_type": "multiple_choice",
+            "prompt": f"What is the main focus of {unit.code} — {unit.title}?",
+            "options": _objective_options(
+                unit,
+                "communicative_goal" if not mode_is_academic else "academic_certification",
+                communication_goal if not mode_is_academic else _first_objective(unit, "academic_certification", communication_goal),
+                [unit.title, grammar_goal, vocabulary_goal, reading_goal],
+            ),
+            "correct_answer": communication_goal if not mode_is_academic else _first_objective(unit, "academic_certification", communication_goal),
+            "explanation": "This answer comes from the curriculum objectives for this unit.",
+            "weak_point": "unit_objectives",
+        },
+        {
+            "item_type": "short_answer",
+            "prompt": f"Name one vocabulary or topic area practiced in {unit.code}.",
+            "options": None,
+            "correct_answer": vocabulary_goal,
+            "keywords": [word.lower() for word in vocabulary_goal.replace(",", "").split()[:2] if len(word) > 2] or [unit.title.split()[0].lower()],
+            "explanation": f"One vocabulary focus for this unit is: {vocabulary_goal}.",
+            "weak_point": "vocabulary_focus",
+        },
+        {
+            "item_type": "multiple_choice",
+            "prompt": f"Which grammar point belongs to {unit.code}?",
+            "options": _objective_options(unit, "grammar", grammar_goal, [communication_goal, vocabulary_goal, speaking_goal]),
+            "correct_answer": grammar_goal,
+            "explanation": "The grammar point is listed in the curriculum for this unit.",
+            "weak_point": "grammar_focus",
+        },
+        {
+            "item_type": "short_answer",
+            "prompt": f"What speaking task should you be able to do after {unit.code}?",
+            "options": None,
+            "correct_answer": speaking_goal,
+            "keywords": [word.lower() for word in speaking_goal.replace(",", "").split()[:2] if len(word) > 2] or ["speak"],
+            "explanation": f"The speaking objective is: {speaking_goal}.",
+            "weak_point": "speaking_focus",
+        },
+        {
+            "item_type": "short_writing",
+            "prompt": f"Write one short sentence in Italian related to {unit.title}.",
+            "options": None,
+            "correct_answer": writing_goal,
+            "keywords": [],
+            "explanation": f"A good answer should connect to the writing objective: {writing_goal}.",
+            "weak_point": "writing_focus",
+        },
+        {
+            "item_type": "multiple_choice",
+            "prompt": f"Which activity is part of {unit.code}?",
+            "options": _objective_options(
+                unit,
+                "reading",
+                reading_goal,
+                [activity.title for activity in unit.activities] + [grammar_goal, vocabulary_goal],
+            ),
+            "correct_answer": reading_goal,
+            "explanation": "This item checks whether you recognize a curriculum activity/objective for the unit.",
+            "weak_point": "reading_focus",
+        },
+    ]
+
+    selected_items = base_items[: max(1, min(count, len(base_items)))]
+    items = []
+    for i, item_data in enumerate(selected_items):
+        items.append({
+            "item_id": f"{exercise_id}-{i}",
+            "item_type": item_data["item_type"],
+            "prompt": item_data["prompt"],
+            "options": item_data["options"],
+            "order_index": i + 1,
+        })
+
+    return {
+        "exercise_id": exercise_id,
+        "unit_code": unit.code,
+        "activity_type": "quiz",
+        "title": f"{unit.code} {unit.title} {'Academic' if mode_is_academic else 'Practice'} Quiz",
+        "instructions": "Answer the questions using the unit objectives and lesson context.",
+        "items": items,
+        "study_mode": study_mode,
+        "_internal": selected_items,
+    }

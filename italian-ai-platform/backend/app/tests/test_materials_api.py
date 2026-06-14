@@ -93,3 +93,14 @@ def test_manual_text_without_raw_text_returns_error():
         "unit_code": "A1.5"
     })
     assert response.status_code == 400
+
+
+def test_create_material_for_a2_unit():
+    response = client.post("/api/materials", json={
+        "title": "A2 travel story",
+        "source_type": "manual_text",
+        "raw_text": "Ieri sono andato a Roma.",
+        "unit_code": "A2.1"
+    })
+    assert response.status_code == 200
+    assert response.json()["unit_code"] == "A2.1"

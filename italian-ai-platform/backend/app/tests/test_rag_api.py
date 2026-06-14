@@ -50,3 +50,9 @@ def test_no_materials_returns_empty_chunks():
     response = client.post("/api/rag/retrieve", json={"unit_code": "A1.5", "query": "xyznonexistent", "limit": 5})
     assert response.status_code == 200
     # Either empty or no matches for nonsense query
+
+
+def test_retrieve_for_valid_non_a1_5_unit_returns_200():
+    response = client.post("/api/rag/retrieve", json={"unit_code": "B2.12", "query": "portfolio", "limit": 5})
+    assert response.status_code == 200
+    assert response.json()["unit_code"] == "B2.12"
